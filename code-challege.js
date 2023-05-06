@@ -25,3 +25,35 @@ Hints:
 Apply this to the team's average scores 😉
 GOOD LUCK 😀
 */
+
+// 1
+const calcAverage = (score1, score2, score3) => {
+  let averageScore = (score1 + score2 + score3) / 3;
+  return averageScore;
+};
+
+//2
+/*
+const avgDolphin = calcAverage(44, 23, 71);
+console.log(avgDolphin);
+
+const avgKoalas = calcAverage(65, 54, 49);
+console.log(avgKoalas);
+*/
+const avgDolphin = calcAverage(85, 54, 41);
+console.log(avgDolphin);
+
+const avgKoalas = calcAverage(23, 34, 27);
+console.log(avgKoalas);
+
+//3
+function checkWinner() {
+  if (avgKoalas >= 2 * avgDolphin) {
+    console.log(`Koalas win (${avgKoalas} vs. ${avgDolphin})`);
+  } else if (avgDolphin >= 2 * avgKoalas) {
+    console.log(`Dolphin win ${avgDolphin} vs. ${avgKoalas}`);
+  } else {
+    console.log('They both lost');
+  }
+}
+console.log(checkWinner());
