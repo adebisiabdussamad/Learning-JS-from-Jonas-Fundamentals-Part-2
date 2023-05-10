@@ -10,7 +10,7 @@ Your tasks:
 1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
 2. Use the function to calculate the average for both teams
 3. Create a function 'checkWinner' that takes the average score of each team
-as parameters ('avgDolhins' and 'avgKoalas'), and then logs the winner
+as parameters ('avgDolphins' and 'avgKoalas'), and then logs the winner
 to the console, together with the victory points, according to the rule above.
 Example: "Koalas win (30 vs. 13)"
 4. Use the 'checkWinner' function to determine the winner for both Data 1 and
@@ -47,7 +47,7 @@ const avgKoalas = calcAverage(23, 34, 27);
 console.log(avgKoalas);
 
 //3
-function checkWinner() {
+function checkWinner(avgDolphin, avgKoalas) {
   if (avgKoalas >= 2 * avgDolphin) {
     console.log(`Koalas win (${avgKoalas} vs. ${avgDolphin})`);
   } else if (avgDolphin >= 2 * avgKoalas) {
