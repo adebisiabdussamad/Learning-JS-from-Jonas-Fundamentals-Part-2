@@ -98,7 +98,6 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 };
 console.log(yearsUntilRetirement(1991, 'Bisi'));
 console.log(yearsUntilRetirement(1970, 'John'));
-    */
 
 //DATA STRUCTURES
 
@@ -140,3 +139,40 @@ console.log(age1, age2, age3);
 
 const ages = [calAge(years[0]), calAge(years[1]), calAge(years[years.length - 1])];
 console.log(ages);
+
+*/
+//BASIC ARRAYS OPERATIONS(METHODS)
+const friends = ['Olamide', 'peter', 'John'];
+const newLength = friends.push('Jay');
+console.log(friends);
+console.log(newLength);
+//Push add element to the end of an array
+
+friends.unshift('Karl');
+console.log(friends);
+//Unshift adds element to the front of an array
+
+friends.pop();
+const popped = friends.pop();
+console.log(popped);
+console.log(friends);
+//Pop removes the last element of an array
+
+friends.shift();
+console.log(friends);
+//Shift removes the first element of an array
+
+console.log(friends.indexOf('peter'));
+console.log(friends.indexOf('bob'));
+//IndexOf tells us a certain position were an element of an array belongs to 
+
+friends.push(23);
+console.log(friends.includes('peter'));
+console.log(friends.includes(23));
+console.log(friends.includes('23'));
+//Includes uses a boolean value to tell us if its in an array
+//NB: it uses strict equality
+
+if (friends.includes('Olamide')) {
+  console.log('You have a friend called Olamide');
+}
