@@ -140,7 +140,6 @@ console.log(age1, age2, age3);
 const ages = [calAge(years[0]), calAge(years[1]), calAge(years[years.length - 1])];
 console.log(ages);
 
-*/
 //BASIC ARRAYS OPERATIONS(METHODS)
 const friends = ['Olamide', 'peter', 'John'];
 const newLength = friends.push('Jay');
@@ -176,3 +175,15 @@ console.log(friends.includes('23'));
 if (friends.includes('Olamide')) {
   console.log('You have a friend called Olamide');
 }
+*/
+
+//OBJECTS
+
+const bisi = {
+  firstName: 'Ade',
+  lastName: 'Bisi',
+  age: 2037 - 2018.,
+  friends: ['Olamide', 'peter', 'John']
+};
+
+console.log(bisi)
