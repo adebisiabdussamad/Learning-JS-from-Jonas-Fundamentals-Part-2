@@ -183,7 +183,35 @@ const bisi = {
   firstName: 'Ade',
   lastName: 'Bisi',
   age: 2037 - 2018.,
-  friends: ['Olamide', 'peter', 'John']
+  friends: ['Olamide', 'peter', 'John'],
+  job: 'student'
 };
 
-console.log(bisi)
+console.log(bisi);
+
+//DOT AND BRACKET NOTATIONS
+
+console.log(bisi.firstName);
+console.log(bisi['lastName']);
+
+const nameKey = 'Name';
+console.log(bisi['first' + nameKey]);
+console.log(bisi['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Adebisi? Choose between firstName, lastName, age, job and friends');
+
+
+if (bisi[interestedIn]) {
+  console.log(bisi[interestedIn]);
+} else {
+  console.log('Wrong request! ');
+}
+
+bisi.location = 'Nigeria';
+bisi['twitter'] = '@adebisicodes';
+console.log(bisi);
+
+
+//Challenge
+//'Bisi has 3 friends, and his best friend is called Olamide
+console.log(`${bisi.firstName} has ${bisi.friends.length} friends, and his best friend is called ${bisi.friends[0]}`);
