@@ -175,7 +175,6 @@ console.log(friends.includes('23'));
 if (friends.includes('Olamide')) {
   console.log('You have a friend called Olamide');
 }
-*/
 
 //OBJECTS
 
@@ -215,3 +214,42 @@ console.log(bisi);
 //Challenge
 //'Bisi has 3 friends, and his best friend is called Olamide
 console.log(`${bisi.firstName} has ${bisi.friends.length} friends, and his best friend is called ${bisi.friends[0]}`);
+*/
+
+//OBJECT METHOD
+const bisi = {
+  firstName: 'Ade',
+  lastName: 'Bisi',
+  birthYear: 2018,
+  friends: ['Olamide', 'peter', 'John'],
+  job: 'student',
+  hasDriverLicense: true,
+
+
+  // calcAge: function (birthYear) {
+  //   return 2037 - birthYear;
+  // }
+  // calcAge: function () {
+  //   // console.log(this);
+  //   return 2037 - this.birthYear;
+  // }
+  calcAge: function () {
+    this.age = 2037 - this.birthYear;
+    return this.age;
+  },
+  //CHALLENGE
+
+  // '// "Bisi is a 19-year old student, and he has a driver's license"'
+  getSummary: function () {
+    return `${this.lastName} is a ${this.calcAge()}-years old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} drivers-license.`;
+  }
+};
+
+console.log(bisi.calcAge());
+console.log(bisi.age);
+console.log(bisi.age);
+
+console.log(bisi.getSummary());
+
+// console.log(bisi['calcAge'](2018));
+
