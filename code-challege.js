@@ -150,3 +150,38 @@ if (mark.bmi > john.bmi) {
 } else {
   console.log(`${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}(${mark.bmi})`);
 }
+
+
+// OR
+
+/* Write your code below. Good luck! 🙂 */
+
+const mark1 = {
+  fullName: 'Mark Miller',
+  mass: 78,
+  height: 1.69,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  }
+};
+const john1 = {
+  fullName: 'John Smith',
+  mass: 92,
+  height: 1.95,
+  calcBMI: function () {
+    this.bmi = this.mass / this.height ** 2;
+    return this.bmi;
+  }
+};
+
+// You must call the function before you can use it because it will show undefined reason yet to find out
+mark1.calcBMI();
+john1.calcBMI();
+
+if (mark1.bmi > john1.bmi) {
+  console.log(`${mark1.fullName}'s BMI(${mark1.bmi}) is higher than ${john1.fullName}'s (${john1.bmi}!)`);
+} else {
+  console.log(`${john1.fullName}'s BMI(${john1.bmi}) is higher than ${mark1.fullName}'s (${mark1.bmi}!)`);
+}
+
