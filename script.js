@@ -1,17 +1,17 @@
 'use strict';
+// let hasDriversLicense = false;
+// const passTest = true;
 /*
-let hasDriversLicense = false;
-const passTest = true;
-
-if (passTest) hasDriverLicense = true;
+if (passTest) hasDriversLicense = true;
 if (hasDriversLicense) console.log('I can drive');
-*/
-/*
+const interface = 'Audio'
 function logger() {
   console.log('My name is Adebisi');
 }
+*/
 
-
+// We are invoking, running or calling the functions
+/*
 logger();
 logger();
 logger();
@@ -28,25 +28,31 @@ console.log(fruitProcessors(5, 0));
 const appleOrangeJuice = fruitProcessors(2, 4);
 console.log(appleOrangeJuice);
 
+*/
 //FUNCTION DECLARATIONS
-
+/*
 function calAge1(birthYear) {
   return 2037 - birthYear;
 }
-const age1 = calAge1(1991);
+const age1 = calAge1(2008);
+console.log(age1);
+*/
 
-
+// Expression produces values
 //FUNCTION EXPRESSION
+/*
 const calAge2 = function (birthYear) {
   return 2037 - birthYear;
 };
 const age2 = calAge1(1991);
 
 console.log(age1, age2);
+*/
 
 //FUNCTION EXPRESSION
 
 //ARROW FUNCTIONS
+/*
 const calAge3 = birthYear => 2037 - birthYear;
 const age3 = calAge3(1991);
 console.log(age3);
@@ -59,9 +65,9 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 
 console.log(yearsUntilRetirement(1991, 'Bisi'));
 console.log(yearsUntilRetirement(1980, 'Ade'));
-
+*/
 // FUNCTION CALLING OTHER FUNCTIONS
-
+/*
 function cutFruitPieces(fruit) {
   return fruit * 3;
 }
@@ -74,10 +80,11 @@ function fruitProcessors(apples, oranges) {
   const juice = `Juice with ${applePieces} pieces of apples and ${orangePieces} pieces of oranges.`;
   return juice;
 }
-
 console.log(fruitProcessors(2, 3));
+*/
 
 //REVIEWING FUNCTIONS
+/*
 const calAge = function (birthYear) {
   return 2037 - birthYear;
 };
@@ -85,7 +92,7 @@ const calAge = function (birthYear) {
 const yearsUntilRetirement = (birthYear, firstName) => {
   const age = calAge(birthYear);
   const retirement = 65 - age;
-
+  
   if (retirement > 0) {
     console.log(`${firstName} retires in ${retirement} years`);
     return retirement;
@@ -94,14 +101,16 @@ const yearsUntilRetirement = (birthYear, firstName) => {
     return -1;
   }
 
-  //return ;
+
 };
 console.log(yearsUntilRetirement(1991, 'Bisi'));
 console.log(yearsUntilRetirement(1970, 'John'));
-
+*/
 //DATA STRUCTURES
 
+
 //ARRAYS
+/*
 const friend1 = 'Olamide';
 const friend2 = 'peter';
 const friend3 = 'John';
@@ -118,9 +127,8 @@ console.log(friends[friends.length - 1]);
 
 friends[2] = 'Jay';
 console.log(friends);
-
 const firstName = 'Ade';
-const Bisi = [firstName, 'Bisi', 2037 - 2018, friends];
+const Bisi = [firstName, 'Bisi', 2037 - 2018, 'student', friends];
 console.log(Bisi);
 
 console.log(Bisi.length);
@@ -130,54 +138,61 @@ const calAge = function (birthYear) {
   return 2037 - birthYear;
 };
 
-const years = [1991, 1992, 1998, 2023];
+const years = [1990, 1967, 2003, 2010, 2018];
+const age1 = calAge(years[0]);
+const age2 = calAge(years[1]);
+const age3 = calAge(years[years.length - 1]);
 
-const age1 = (calAge(years[0]));
-const age2 = (calAge(years[1]));
-const age3 = (calAge(years[years.length - 1]));
 console.log(age1, age2, age3);
-
 const ages = [calAge(years[0]), calAge(years[1]), calAge(years[years.length - 1])];
-console.log(ages);
-
+console.log(ages)
+*/
 //BASIC ARRAYS OPERATIONS(METHODS)
+/*
 const friends = ['Olamide', 'peter', 'John'];
-const newLength = friends.push('Jay');
+const newLength = friends.push('Adebisi');
 console.log(friends);
 console.log(newLength);
-//Push add element to the end of an array
-
+*/
+//Push add element to the end of an array, push returns the length of the array
+/* 
 friends.unshift('Karl');
 console.log(friends);
-//Unshift adds element to the front of an array
-
+*/
+//Unshift adds element to the front of an array, returns the length of the array
+/* 
 friends.pop();
 const popped = friends.pop();
 console.log(popped);
 console.log(friends);
-//Pop removes the last element of an array
-
+*/
+//Pop removes the last element of an array, returns the element removed
+/* 
 friends.shift();
 console.log(friends);
-//Shift removes the first element of an array
-
+*/
+//Shift removes the first element of an array, returns the element removed
+/* 
 console.log(friends.indexOf('peter'));
 console.log(friends.indexOf('bob'));
-//IndexOf tells us a certain position were an element of an array belongs to 
-
+*/
+//IndexOf tells us a certain position were an element of an array belongs to
+/* 
 friends.push(23);
 console.log(friends.includes('peter'));
-console.log(friends.includes(23));
 console.log(friends.includes('23'));
+console.log(friends.includes('23'));
+*/
 //Includes uses a boolean value to tell us if its in an array
 //NB: it uses strict equality
-
+/* 
 if (friends.includes('Olamide')) {
   console.log('You have a friend called Olamide');
-}
+} 
+*/
 
 //OBJECTS
-
+/*
 const bisi = {
   firstName: 'Ade',
   lastName: 'Bisi',
@@ -185,20 +200,20 @@ const bisi = {
   friends: ['Olamide', 'peter', 'John'],
   job: 'student'
 };
-
 console.log(bisi);
+*/
 
 //DOT AND BRACKET NOTATIONS
-
+/*
 console.log(bisi.firstName);
 console.log(bisi['lastName']);
 
 const nameKey = 'Name';
 console.log(bisi['first' + nameKey]);
 console.log(bisi['last' + nameKey]);
-
+*/
+/*
 const interestedIn = prompt('What do you want to know about Adebisi? Choose between firstName, lastName, age, job and friends');
-
 
 if (bisi[interestedIn]) {
   console.log(bisi[interestedIn]);
@@ -206,50 +221,52 @@ if (bisi[interestedIn]) {
   console.log('Wrong request! ');
 }
 
+
 bisi.location = 'Nigeria';
 bisi['twitter'] = '@adebisicodes';
 console.log(bisi);
-
-
-//Challenge
-//'Bisi has 3 friends, and his best friend is called Olamide
-console.log(`${bisi.firstName} has ${bisi.friends.length} friends, and his best friend is called ${bisi.friends[0]}`);
 */
 
+
+// Challenge
+// 'Bisi has 3 friends, and his best friend is called Olamide'
+// console.log(`${bisi.lastName} has ${bisi.friends.length} friends, and his best friend is called ${bisi.friends[0]}`)
+
+
 //OBJECT METHOD
-const bisi = {
+/*const bisi = {
   firstName: 'Ade',
   lastName: 'Bisi',
   birthYear: 2018,
   friends: ['Olamide', 'peter', 'John'],
   job: 'student',
-  hasDriverLicense: true,
-
-
+  hasDriverLicense: false,
+  
+  
   // calcAge: function (birthYear) {
   //   return 2037 - birthYear;
   // }
+  
   // calcAge: function () {
-  //   // console.log(this);
+  //   // console.log(this)
   //   return 2037 - this.birthYear;
   // }
   calcAge: function () {
-    this.age = 2037 - this.birthYear;
+    this.age = 2037 - this.birthYear
     return this.age;
   },
+  
   //CHALLENGE
-
-  // '// "Bisi is a 19-year old student, and he has a driver's license"'
-  getSummary: function () {
-    return `${this.lastName} is a ${this.calcAge()}-years old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} drivers-license.`;
+  // "Bisi is a 19-year old student, and he has a driver's license"'
+  getSummary: function(){
+    return `${this.lastName} is a ${this.calcAge()}-year old ${this.job}, and he has ${this.hasDriverLicense ? 'a' : 'no'} drivers-license`
   }
+
 };
+console.log(bisi.getSummary())
 
-console.log(bisi.calcAge());
-console.log(bisi.age);
-console.log(bisi.age);
-
-console.log(bisi.getSummary());
-
-// console.log(bisi['calcAge'](2018));
-
+ console.log(bisi.age)
+ console.log(bisi.age)
+ console.log(bisi.age)
+//  console.log( bisi['calcAge'](2018))
+*/
