@@ -108,7 +108,6 @@ console.log(yearsUntilRetirement(1970, 'John'));
 */
 //DATA STRUCTURES
 
-
 //ARRAYS
 /*
 const friend1 = 'Olamide';
@@ -227,11 +226,9 @@ bisi['twitter'] = '@adebisicodes';
 console.log(bisi);
 */
 
-
 // Challenge
 // 'Bisi has 3 friends, and his best friend is called Olamide'
 // console.log(`${bisi.lastName} has ${bisi.friends.length} friends, and his best friend is called ${bisi.friends[0]}`)
-
 
 //OBJECT METHOD
 /*const bisi = {
@@ -270,3 +267,131 @@ console.log(bisi.getSummary())
  console.log(bisi.age)
 //  console.log( bisi['calcAge'](2018))
 */
+
+// Object and if/else statement are control structures
+
+// LOOPS
+/*
+console.log("Lifting weights repetition 1 🏋🏽");
+console.log("Lifting weights repetition 2 🏋🏽");
+console.log("Lifting weights repetition 3 🏋🏽");
+console.log("Lifting weights repetition 4 🏋🏽");
+console.log("Lifting weights repetition 5 🏋🏽");
+console.log("Lifting weights repetition 6 🏋🏽");
+console.log("Lifting weights repetition 7 🏋🏽");
+console.log("Lifting weights repetition 8 🏋🏽");
+console.log("Lifting weights repetition 9 🏋🏽");
+console.log("Lifting weights repetition 10 🏋🏽");
+*/
+// for loops keeps running while condition is TRUE
+
+/*
+for (let rep = 5; rep <= 10; rep++) {
+  console.log(`Lifting weights repetition ${rep} 🏋🏽`);
+}
+*/
+
+// The for loop runs only if the conditions is true
+
+// LOOPS ARRAYS, BREAKING AND CONTINUING
+
+/*
+const bisi = [
+  'Adebisi',
+  'Bisi',
+  2037 - 2018,
+  'student',
+  ['Micheal, Mark, Olamide'],
+  true
+];
+*/
+
+// const types = [];
+
+// for (let i = 0; i < bisi.length; i++) {
+// Reading from bisi array
+//   console.log(bisi[i], typeof bisi[i]);
+
+// Filling types arrays
+// types[i] = typeof bisi[i];
+//   types.push(typeof bisi[i]);
+// }
+/*
+console.log(types);
+
+const years = [1991, 2007, 1969, 2002, 2023];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+
+console.log(ages);
+*/
+// continue(this is to exit the current iteration of the loop and moves to the next one)
+
+/*
+console.log('----ONLY STRING----');
+for (let i = 0; i < bisi.length; i++) {
+  if (typeof bisi[i] != 'string') continue;
+  console.log(bisi[i], typeof bisi[i]);
+}
+*/
+
+//  and break(used to terminate the whole loop)
+
+/*
+console.log('----BREAK WITH NUMBER----');
+for (let i = 0; i < bisi.length; i++) {
+  if (typeof bisi[i] === 'number') break;
+  console.log(bisi[i], typeof bisi[i]);
+}
+*/
+
+// LOOPING BACKWARDS AND LOOPS IN LOOPS
+
+/*
+const bisi = [
+  'Adebisi',
+  'Bisi',
+  2037 - 2018,
+  'student',
+  ['Micheal, Mark, Olamide'],
+  true
+];
+
+for (let i = bisi.length - 1; i >= 0; i--) {
+  console.log(i, bisi[i]);
+}
+
+for (let exercise = 1; exercise <= 3; exercise++) {
+  console.log(`-----------Starting exercise ${exercise}`);
+
+  for (let rep = 1; rep < 6; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weights repetition ${rep}🏋🏽`);
+  }
+}
+*/
+
+// THE WHILE LOOP
+
+// for (let rep = 5; rep <= 10; rep++) {
+//   console.log(`Lifting weights repetition ${rep} 🏋🏽`);
+// }
+
+// let rep = 1;
+// while (rep <= 10) {
+//   console.log(`WHILE: Lifting weights repetition ${rep} 🏋🏽`);
+//   rep++;
+// }
+
+let dice = Math.trunc(Math.random() * 6) + 1;
+// console.log(dice)
+
+while (dice != 6) {
+  console.log(`You rolled a ${dice}`);
+  dice = Math.trunc(Math.random() * 6) + 1;
+  if (dice === 6) console.log('Loop is about to end...')
+}
+
+// While does not depend on any counter variable

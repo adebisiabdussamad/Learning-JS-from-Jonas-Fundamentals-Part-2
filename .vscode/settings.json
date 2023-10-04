@@ -1,0 +1,8 @@
+{
+  "workbench.settings.useSplitJSON": false,
+  "json.schemas": [],
+  "prettier.singleQuote": true,
+  "prettier.jsonEnable": [
+    
+    "json"]
+}
